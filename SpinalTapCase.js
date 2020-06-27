@@ -16,7 +16,13 @@ function spinalCase(str) {
     }
     return splitStr.join("").replace(/\s+|_\s/g, "-").toLowerCase();
 }
-
+//from freeCodeCamp
+function spinalCaseBetter(str) {
+    return str
+        .split(/\s|_|(?=[A-Z])/)
+        .join("-")
+        .toLowerCase();
+}
 let testArrs = ['This Is Spinal Tap', "The_Andy_Griffith_Show", "AllThe-small Things", "thisIsSpinalTap"];
 for (let i = 0; i < testArrs.length; i++){
     let ans = spinalCase(testArrs[i]);
