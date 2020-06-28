@@ -36,7 +36,6 @@ function sumFibs(num) {
     return sum;
 }
 
-sumFibs(4);
 let testArrs = [10, 4, 1, 1000, 4000000, 75024, 75025];
 for (let i = 0; i < testArrs.length; i++){
     let ans = sumFibs(testArrs[i]);
