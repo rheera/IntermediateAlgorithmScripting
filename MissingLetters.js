@@ -27,6 +27,7 @@ function fearNotLetter(str) {
             return String.fromCharCode(firstLetterCode + i);
         }
     }
+    return undefined;
 }
 
 let testArrs = ['abce', "abcdefghjklmno", "stvwx", "bcdf", "abcdefghijklmnopqrstuvwxyz"];
