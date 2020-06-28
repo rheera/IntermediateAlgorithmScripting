@@ -10,6 +10,8 @@ The unique numbers should be sorted by their original order, but the final array
 Check the assertion tests for examples.
  */
 
+// look at Set object
+// merge all arrays then turn it into a Set object, which naturally can't have any duplicates 
 function uniteUnique(...arr) {
     let newArr = [];
     for (let i = 0; i < arr.length; i++){
