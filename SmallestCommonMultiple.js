@@ -9,6 +9,10 @@ numbers between 1 and 3. The answer here would be 6.
  */
 
 /*
+// getting the factors of a number
+// was going to find the LCM using a formula that used teh GCF between two numbers
+// LCM of two number a and b
+// LCM(a,b) == (a * b)/GCF(a, b)
 function multiples(num) {
     let multipleArr = [];
     for (let i = 2; i <= Math.sqrt(num); i ++){
@@ -20,6 +24,7 @@ function multiples(num) {
 }
 */
 /*
+// was going to list all the multiples of each number and find the lowest common multiple between all the arrays
 function listMultiples(num, numMax) {
     let multipleArr = [];
     let i = 1;
@@ -61,7 +66,7 @@ function isPrime(num){
         return true;
     }
 }
-
+// settled on finding LCM using prime factorization of each number
 function primeFactor(num) {
     if (num == 1){
         return [1];
