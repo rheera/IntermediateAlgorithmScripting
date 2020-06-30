@@ -13,6 +13,7 @@ sumTwoAnd(3) returns 5.
 If either argument isn't a valid number, return undefined.
  */
 
+// TODO make a function to check if number 
 function addTogether(...args) {
     if (args.length == 1 && typeof args[0] == "number" ){
         return function (num) {
