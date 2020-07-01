@@ -21,6 +21,14 @@ function orbitalPeriod(arr) {
         name: x["name"],
         orbitalPeriod: Math.round(calculateOrbitalPeriod(x["avgAlt"]))
     }));
+    // pass object properties
+    /*
+    return arr.map(({name, avgAlt}) => {
+        const orbitalPeriod = Math.round(calculateOrbitalPeriod(avgAlt));
+        return { name, orbitalPeriod };
+    });
+     */
+
 }
 
 let eg1 = orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);
